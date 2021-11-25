@@ -1,0 +1,26 @@
+{
+  "name": "denisfarkas_3_25112021",
+  "version": "1.0.0",
+  "description": "sass et gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denis-farkas/DenisFarkas_3_25112021.git"
+  },
+  "author": "denis farkas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denis-farkas/DenisFarkas_3_25112021/issues"
+  },
+  "homepage": "https://github.com/denis-farkas/DenisFarkas_3_25112021#index",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.43.5"
+  }
+}
