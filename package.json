@@ -22,6 +22,7 @@
     "gulp-postcss": "^9.0.1"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "autoprefixer": "^10.3.1",
     "gulp-imagemin": "^7.0.0",
     "gulp-sass": "^5.0.0",

@@ -5,6 +5,7 @@ const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 
+
 //Images
 const imagemin = require('gulp-imagemin');
 const webp =require('gulp-webp');
@@ -21,6 +22,25 @@ function css(done) {
     done();
 
 }
+
+function font(done){
+    src('src/scss/fontaws.scss')
+    .pipe( sass() )
+    .pipe( postcss( [ autoprefixer() ] ) )
+    .pipe( dest('build/css') )
+
+    done();
+}
+
+function norm(done){
+    src('src/scss/normalize.scss')
+    .pipe( sass() )
+    .pipe( postcss( [ autoprefixer() ] ) )
+    .pipe( dest('build/css') )
+
+    done();
+}
+
 
 function images() {
    
@@ -39,8 +59,16 @@ function dev(){
     watch('src/img/**/*', images);
 }
 
+function icons(){
+    return src('node_modules/@fortawesome/fontawesome-free/webfonts/*')
+        .pipe(dest('build/webfonts/'));
+}
+
 exports.css = css;
+exports.font = font;
+exports.norm = norm;
 exports.dev = dev;
+exports.icons = icons;
 exports.images = images;
 exports.versionWebp = versionWebp;
-exports.default =series( images,versionWebp, css, dev );
+exports.default =series( images,versionWebp, css, font, norm, dev );

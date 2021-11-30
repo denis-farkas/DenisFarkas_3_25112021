@@ -2,18 +2,42 @@
 @use "base/mixins";
 
 .header {
-  padding: 5rem 0;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__logo {
+    width: 28rem;
+    padding: 2rem;
+  }
+
+  &__return {
+    width: 5rem;
+    padding: 1rem;
+  }
+
+  &__button {
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    background-color: variables.$white;
+  }
+
+  fa {
+    font-size: 15px;
+    color: variables.$black;
+  }
 
   @include mixins.small_device {
-    padding: 4rem;
   }
 
   @include mixins.tablet {
-    padding: 3rem;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   @include mixins.desktop {
-    padding: 2rem;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }

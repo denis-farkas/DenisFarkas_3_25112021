@@ -1,0 +1,79 @@
+@use "base/variables";
+@use "base/mixins";
+
+input[type="text"] {
+  border: none;
+  background-color: variables.$grey;
+  color: variables.$black;
+  text-align: center;
+  outline: none;
+  padding: 1px 0;
+}
+
+input[type="text"]:focus {
+  border: none;
+}
+
+::placeholder {
+  color: variables.$black;
+}
+
+.explore {
+  &__form {
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+
+    &__search {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: variables.$grey;
+      height: 4rem;
+    }
+
+    &__title {
+      padding: 0 4rem;
+      text-align: center;
+    }
+
+    &__subtitle {
+      padding: 0 1rem;
+      text-align: center;
+      color: variables.$grey-dark;
+    }
+
+    &__button {
+      background: rgb(255, 121, 218);
+      background: -moz-linear-gradient(
+        top,
+        rgb(255, 121, 218) 0%,
+        rgb(147, 86, 220) 100%
+      );
+      background: -webkit-linear-gradient(
+        top,
+        rgb(255, 121, 218) 0%,
+        rgb(147, 86, 220) 100%
+      );
+      background: linear-gradient(
+        to bottom,
+        rgb(255, 121, 218) 0%,
+        rgb(147, 86, 220) 100%
+      );
+
+      font-size: 2rem;
+      padding: 1.5rem;
+      text-align: center;
+      color: white;
+      box-shadow: 0 0 20px #eee;
+      border-radius: 30px;
+      border-color: white;
+      width: 26rem;
+      cursor: pointer;
+      display: inline-block;
+    }
+  }
+}
