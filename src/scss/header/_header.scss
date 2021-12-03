@@ -5,10 +5,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 2px 8px variables.$grey;
+  margin-bottom: 5px;
 
   &__logo {
-    width: 28rem;
-    padding: 2rem;
+    width: 16rem;
+    padding-top: 2.2rem;
+    padding-bottom: 1.5rem;
   }
 
   &__return {

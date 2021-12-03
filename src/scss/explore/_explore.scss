@@ -3,11 +3,12 @@
 
 input[type="text"] {
   border: none;
-  background-color: variables.$grey;
+  background-color: variables.$grey-light;
   color: variables.$black;
-  text-align: center;
+  text-align: left;
   outline: none;
-  padding: 1px 0;
+  padding: 0 17.3px;
+  width: 15.4rem;
 }
 
 input[type="text"]:focus {
@@ -21,27 +22,26 @@ input[type="text"]:focus {
 .explore {
   &__form {
     width: 100%;
-    padding: 2rem 0;
     display: flex;
     flex-direction: column;
-    align-content: space-between;
-    justify-content: center;
 
     &__search {
       display: flex;
-      align-items: center;
       justify-content: center;
-      background-color: variables.$grey;
-      height: 4rem;
+      padding-top: 1.38rem;
+      padding-bottom: 1.4rem;
+      background-color: variables.$grey-light;
     }
 
     &__title {
-      padding: 0 4rem;
+      margin-top: 3.7rem;
+      padding: 0 6rem;
+      width: 30rem;
       text-align: center;
     }
 
     &__subtitle {
-      padding: 0 1rem;
+      padding: 0 4rem;
       text-align: center;
       color: variables.$grey-dark;
     }

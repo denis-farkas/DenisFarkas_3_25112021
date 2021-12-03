@@ -30,7 +30,7 @@
     "postcss": "^8.4.1",
     "sass": "^1.43.5"
   },
-  "browerslist": [
+  "browserslist": [
     "last 1 version",
     "> 1%"
   ]
