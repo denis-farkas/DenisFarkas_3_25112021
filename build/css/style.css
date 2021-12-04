@@ -31,7 +31,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
-  /* background-image: url("../img/Accueil.png");
+  /*background-image: url("../img/Accueil.png");
   background-repeat: no-repeat;
   background-size: cover;*/
 }
@@ -91,6 +91,16 @@ h4 {
 
 .bg-primary {
   background-color: #9356dc;
+}
+
+.title {
+  margin-top: 5rem;
+  padding: 0 2rem;
+}
+
+.content {
+  padding: 0 2rem;
+  align-items: center;
 }
 
 .header {
@@ -205,4 +215,60 @@ input[type=text]:focus {
   width: 22rem;
   cursor: pointer;
   display: inline-block;
+}
+
+.functionnal {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+.functionnal__choose__btn {
+  position: relative;
+  margin-top: 3.3rem;
+  margin-left: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  color: #000000;
+  box-shadow: 4px 4px 4px #eaeaea;
+  background-color: #f6f6f6;
+  border: 1px solid #f6f6f6;
+  border-radius: 20px;
+  width: 100%;
+  cursor: pointer;
+  display: inline-block;
+  height: 6rem;
+}
+.functionnal__choose__btn--primary {
+  background-color: #f5edff;
+  border: 1px solid #f5edff;
+}
+.functionnal__choose__badge {
+  position: absolute;
+  padding-top: 0.2rem;
+  left: -0.8rem;
+  border-radius: 2rem;
+  color: #ffffff;
+  width: 2rem;
+  height: 2rem;
+  background-color: #9356dc;
+  font-size: 1.5rem;
+}
+
+.fa-mobile-alt,
+.fa-list-ul {
+  font-size: 1.8rem;
+  position: absolute;
+  left: 3rem;
+  color: #8a8989;
+  padding-left: 1rem;
+}
+
+.fa-store {
+  font-size: 1.8rem;
+  position: absolute;
+  left: 3rem;
+  color: #9356dc;
+  padding-left: 1rem;
 }

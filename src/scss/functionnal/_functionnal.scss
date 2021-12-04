@@ -1,0 +1,64 @@
+@use "base/variables";
+@use "base/utilities";
+@use "base/mixins";
+
+.functionnal {
+  display: flex;
+  flex-direction: column;
+  background-color: variables.$white;
+
+  &__choose {
+    &__btn {
+      position: relative;
+      margin-top: 3.3rem;
+      margin-left: 0.5rem;
+      font-size: 1.6rem;
+      font-weight: 700;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      color: variables.$black;
+      box-shadow: 4px 4px 4px variables.$grey;
+      background-color: variables.$grey-light;
+      border: 1px solid variables.$grey-light;
+      border-radius: 20px;
+      width: 100%;
+      cursor: pointer;
+      display: inline-block;
+      height: 6rem;
+
+      &--primary {
+        background-color: variables.$grey-pink;
+        border: 1px solid variables.$grey-pink;
+      }
+    }
+
+    &__badge {
+      position: absolute;
+      padding-top: 0.2rem;
+      left: -0.8rem;
+      border-radius: 2rem;
+      color: variables.$white;
+      width: 2rem;
+      height: 2rem;
+      background-color: variables.$primary;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.fa-mobile-alt,
+.fa-list-ul {
+  font-size: 1.8rem;
+  position: absolute;
+  left: 3rem;
+  color: variables.$grey-dark;
+  padding-left: 1rem;
+}
+
+.fa-store {
+  font-size: 1.8rem;
+  position: absolute;
+  left: 3rem;
+  color: variables.$primary;
+  padding-left: 1rem;
+}
