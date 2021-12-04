@@ -82,7 +82,7 @@ h4 {
 }
 
 .muted {
-  color: #777171;
+  color: #4f4f4f;
 }
 
 .text-center {
@@ -97,7 +97,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 2px 8px #c7c1c1;
+  box-shadow: 0 2px 8px #8a8989;
   margin-bottom: 5px;
 }
 .header__logo {
@@ -170,6 +170,8 @@ input[type=text]:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 6rem;
+  background-color: #f6f6f6;
 }
 .explore__form__search {
   text-align: center;
@@ -197,7 +199,7 @@ input[type=text]:focus {
   padding: 1.4rem 1.5rem;
   text-align: center;
   color: #ffffff;
-  box-shadow: 4px 4px 4px #c7c1c1;
+  box-shadow: 4px 4px 4px #8a8989;
   border: none;
   border-radius: 30px;
   width: 22rem;

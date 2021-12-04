@@ -3,7 +3,7 @@
 
 input[type="text"] {
   border: none;
-  background-color: variables.$grey-light;
+  background-color: variables.$grey;
   color: variables.$black;
   text-align: left;
   outline: none;
@@ -24,13 +24,15 @@ input[type="text"]:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 6rem;
+    background-color: variables.$grey-light;
 
     &__search {
       text-align: center;
       width: 100%;
       padding-top: 1.2rem;
       padding-bottom: 1.4rem;
-      background-color: variables.$grey-light;
+      background-color: variables.$grey;
     }
 
     &__title {
@@ -69,7 +71,7 @@ input[type="text"]:focus {
       padding: 1.4rem 1.5rem;
       text-align: center;
       color: variables.$white;
-      box-shadow: 4px 4px 4px variables.$grey;
+      box-shadow: 4px 4px 4px variables.$grey-dark;
       border: none;
       border-radius: 30px;
       width: 22rem;
