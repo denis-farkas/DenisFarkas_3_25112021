@@ -1,5 +1,23 @@
 @use "variables";
 
+@mixin iphone6_8 {
+  @media (min-width: variables.$small_375) {
+    @content;
+  }
+}
+
+@mixin iphone5 {
+  @media (min-width: variables.$small_320) {
+    @content;
+  }
+}
+
+@mixin iphoneX {
+  @media (min-width: variables.$small_414) {
+    @content;
+  }
+}
+
 @mixin small_device {
   @media (min-width: variables.$small) {
     @content;

@@ -1,8 +1,21 @@
 @use "variables";
+@use "mixins";
 
 html {
-  font-size: 62.5%;
   box-sizing: border-box;
+
+  @include mixins.small_device {
+    font-size: 80%;
+  }
+  @include mixins.iphone5 {
+    font-size: 53.42%;
+  }
+  @include mixins.iphone6_8 {
+    font-size: 62.5%;
+  }
+  @include mixins.iphoneX {
+    font-size: 69%;
+  }
 }
 
 *,
@@ -14,14 +27,13 @@ html {
 body {
   font-family: variables.$font_principal;
   font-size: 1.6rem;
-  background-image: url("../img/Accueil.png");
+  /* background-image: url("../img/Accueil.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;*/
 }
 
 p {
-  color: variables.$black;
-  font-size: 1.8rem;
+  font-size: 1.78rem;
   margin-block-start: 0.7em;
   margin-block-end: 0.7em;
 }

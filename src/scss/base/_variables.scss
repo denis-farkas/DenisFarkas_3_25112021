@@ -2,6 +2,9 @@
 $font_principal: "Roboto", sans-serif;
 
 //Media Queries
+$small_320: 320px;
+$small_414: 414px;
+$small_375: 375px;
 $small: 480px;
 $tablet: 768px;
 $desktop: 1024px;
@@ -15,6 +18,7 @@ $white: #ffffff;
 $grey: #c7c1c1;
 $grey-dark: #777171;
 $grey-light: #eaeaea;
+$transp: rgba(255, 255, 255, 0);
 
 //Unities
 $separation: 0.1rem;
