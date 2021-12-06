@@ -24,8 +24,8 @@ input[type="text"]:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 6rem;
-    background-color: variables.$grey-light;
+    padding-bottom: 5rem;
+    background-color: variables.$transp;
 
     &__search {
       text-align: center;
@@ -36,9 +36,9 @@ input[type="text"]:focus {
     }
 
     &__title {
-      margin-top: 3.7rem;
-      padding-left: 3.7rem;
-      padding-right: 5rem;
+      margin-top: 3.2rem;
+      padding-left: 4rem;
+      padding-right: 5.8rem;
       text-align: center;
     }
 
@@ -67,14 +67,14 @@ input[type="text"]:focus {
 
       margin-top: 2rem;
       margin-left: 0.5rem;
-      font-size: 1.68rem;
+      font-size: 1.6rem;
       padding: 1.4rem 1.5rem;
       text-align: center;
       color: variables.$white;
       box-shadow: 4px 4px 4px variables.$grey-dark;
       border: none;
       border-radius: 30px;
-      width: 22rem;
+      width: 21rem;
       cursor: pointer;
       display: inline-block;
     }

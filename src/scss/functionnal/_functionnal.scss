@@ -10,19 +10,21 @@
   &__choose {
     &__btn {
       position: relative;
-      margin-top: 3.26rem;
+      margin-top: 1rem;
       margin-left: 0.8rem;
-      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      font-size: 1.57rem;
       font-weight: 700;
-      padding: 2rem 1.5rem;
+      padding: 4vh 1vw;
+      align-content: center;
       text-align: center;
       color: variables.$black;
       box-shadow: 4px 4px 4px variables.$grey;
       background-color: variables.$grey-light;
       border: 1px solid variables.$grey-light;
       border-radius: 20px;
-      width: 88vw;
-      height: 10vh;
+      width: 82vw;
+      height: 11vh;
       cursor: pointer;
       display: inline-block;
 
@@ -51,7 +53,7 @@
 .fa-list-ul {
   font-size: 1.85rem;
   position: absolute;
-  left: 3rem;
+  left: 2.3rem;
   color: variables.$grey-dark;
   padding-left: 1rem;
 }
