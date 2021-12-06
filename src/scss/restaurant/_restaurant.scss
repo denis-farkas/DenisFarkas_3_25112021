@@ -1,0 +1,100 @@
+@use "base/variables";
+@use "base/utilities";
+@use "base/mixins";
+
+.restaurant {
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  background-color: variables.$grey-light;
+}
+
+.card {
+  margin-top: 2rem;
+  border: 1px solid variables.$grey-light;
+  border-radius: 1rem;
+  background-color: variables.$white;
+  margin-bottom: 2.3rem;
+
+  &__header {
+    height: 17rem;
+    display: flex;
+
+    &__image {
+      border-radius: 1rem 1rem 0 0;
+
+      width: 100%;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+
+    &__main {
+      width: 75%;
+      padding-left: 1.2rem;
+
+      &__title {
+        font-weight: 600;
+        margin-right: 7rem;
+      }
+
+      &__subtitle {
+        padding-left: 1rem;
+      }
+    }
+
+    &__side {
+      width: 25%;
+      height: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .prime,
+  .third,
+  .fourth {
+    object-position: center bottom;
+    object-fit: cover;
+  }
+
+  .second {
+    object-position: 50% 60%;
+    object-fit: cover;
+  }
+
+  .fa-heart {
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: variables.$black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    opacity: 1;
+  }
+  .fa-heart::after {
+    content: "\f004";
+    background: linear-gradient(#9356dc, #ff79da);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1.3px;
+    -webkit-text-stroke-color: variables.$transp;
+    font-size: 1.54rem;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in;
+  }
+  .fa-heart:hover::after {
+    opacity: 1;
+  }
+}
