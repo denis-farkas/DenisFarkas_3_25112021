@@ -1,0 +1,10 @@
+@use "base/variables";
+@use "base/mixins";
+
+.footer {
+  background-color: variables.$transp;
+
+  &_logo {
+    margin-top: 15rem;
+  }
+}

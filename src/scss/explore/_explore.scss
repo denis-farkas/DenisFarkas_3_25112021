@@ -31,19 +31,20 @@ input[type="text"]:focus {
       text-align: center;
       width: 100%;
       padding-top: 1.2rem;
-      padding-bottom: 1.4rem;
+      padding-bottom: 0.4rem;
       background-color: variables.$grey;
+      font-size: 1.6rem;
     }
 
     &__title {
-      margin-top: 3.2rem;
+      margin-top: 5.2rem;
       padding-left: 4rem;
-      padding-right: 5.8rem;
+      padding-right: 6rem;
       text-align: center;
     }
 
     &__subtitle {
-      padding-left: 1rem;
+      padding-left: 1.2rem;
       text-align: center;
     }
 
@@ -68,13 +69,13 @@ input[type="text"]:focus {
       margin-top: 2rem;
       margin-left: 0.5rem;
       font-size: 1.6rem;
-      padding: 1.4rem 1.5rem;
+      padding: 1.5rem 1.5rem;
       text-align: center;
       color: variables.$white;
       box-shadow: 4px 4px 4px variables.$grey-dark;
       border: none;
       border-radius: 30px;
-      width: 21rem;
+      width: 22.5rem;
       cursor: pointer;
       display: inline-block;
     }

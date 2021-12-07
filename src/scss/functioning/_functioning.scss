@@ -2,28 +2,33 @@
 @use "base/utilities";
 @use "base/mixins";
 
-.functionnal {
+.functioning {
   display: flex;
   flex-direction: column;
-  background-color: variables.$white;
+  background-color: variables.$transp;
+  border: 1px solid tomato;
+
+  &__title {
+    padding-top: 6rem;
+    padding-left: 1.5rem;
+  }
 
   &__choose {
     &__btn {
       position: relative;
-      margin-top: 1rem;
-      margin-left: 0.8rem;
-      margin-bottom: 1rem;
-      font-size: 1.57rem;
+      margin-left: 0.78rem;
+      margin-bottom: 2.5rem;
+      font-size: 1.6rem;
       font-weight: 700;
-      padding: 4vh 1vw;
+      padding: 4vh 18vw;
       align-content: center;
       text-align: center;
-      color: variables.$black;
+      color: variables.$tomat;
       box-shadow: 4px 4px 4px variables.$grey;
-      background-color: variables.$grey-light;
-      border: 1px solid variables.$grey-light;
+      background-color: variables.$transp;
+      border: 1px solid variables.$tomat;
       border-radius: 20px;
-      width: 82vw;
+      width: 88vw;
       height: 11vh;
       cursor: pointer;
       display: inline-block;
@@ -37,7 +42,7 @@
     &__badge {
       position: absolute;
       padding-top: 0.4rem;
-      left: -0.8rem;
+      left: -1rem;
       border-radius: 2.3rem;
       color: variables.$white;
       width: 2.3rem;
@@ -49,11 +54,18 @@
   }
 }
 
-.fa-mobile-alt,
-.fa-list-ul {
-  font-size: 1.85rem;
+.fa-mobile-alt {
+  font-size: 2rem;
   position: absolute;
-  left: 2.3rem;
+  left: 2.55rem;
+  color: variables.$grey-dark;
+  padding-left: 1.2rem;
+}
+
+.fa-list-ul {
+  font-size: 1.7rem;
+  position: absolute;
+  left: 2.5rem;
   color: variables.$grey-dark;
   padding-left: 1rem;
 }

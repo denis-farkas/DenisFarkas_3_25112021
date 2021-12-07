@@ -30,18 +30,17 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 1.6rem;
   background-image: url("../img/Accueil.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 p {
-  font-size: 1.7rem;
-  -webkit-margin-before: 0.7em;
-          margin-block-start: 0.7em;
-  -webkit-margin-after: 0.7em;
-          margin-block-end: 0.7em;
+  font-size: 1.8rem;
+  -webkit-margin-before: 0.3rem;
+          margin-block-start: 0.3rem;
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
 }
 
 .soft {
@@ -60,6 +59,15 @@ a {
   text-decoration: none;
 }
 
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+  /* Remove padding */
+  margin: 0;
+  /* Remove margins */
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -68,23 +76,24 @@ img {
 h1,
 h2,
 h3 {
-  margin: 0 0 0.1rem 0;
+  margin: 0 0 1.1rem 0;
+  padding-left: 0.5rem;
 }
 
 h1 {
-  font-size: 2.3rem;
+  font-size: 2.45rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 h3 {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
 }
 
 h4 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .muted {
@@ -193,17 +202,18 @@ input[type=text]:focus {
   text-align: center;
   width: 100%;
   padding-top: 1.2rem;
-  padding-bottom: 1.4rem;
+  padding-bottom: 0.4rem;
   background-color: #eaeaea;
+  font-size: 1.6rem;
 }
 .explore__form__title {
-  margin-top: 3.2rem;
+  margin-top: 5.2rem;
   padding-left: 4rem;
-  padding-right: 5.8rem;
+  padding-right: 6rem;
   text-align: center;
 }
 .explore__form__subtitle {
-  padding-left: 1rem;
+  padding-left: 1.2rem;
   text-align: center;
 }
 .explore__form__button {
@@ -212,50 +222,54 @@ input[type=text]:focus {
   margin-top: 2rem;
   margin-left: 0.5rem;
   font-size: 1.6rem;
-  padding: 1.4rem 1.5rem;
+  padding: 1.5rem 1.5rem;
   text-align: center;
   color: #ffffff;
   box-shadow: 4px 4px 4px #8a8989;
   border: none;
   border-radius: 30px;
-  width: 21rem;
+  width: 22.5rem;
   cursor: pointer;
   display: inline-block;
 }
 
-.functionnal {
+.functioning {
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid tomato;
 }
-.functionnal__choose__btn {
+.functioning__title {
+  padding-top: 6rem;
+  padding-left: 1.5rem;
+}
+.functioning__choose__btn {
   position: relative;
-  margin-top: 1rem;
-  margin-left: 0.8rem;
-  margin-bottom: 1rem;
-  font-size: 1.57rem;
+  margin-left: 0.78rem;
+  margin-bottom: 2.5rem;
+  font-size: 1.6rem;
   font-weight: 700;
-  padding: 4vh 1vw;
+  padding: 4vh 18vw;
   align-content: center;
   text-align: center;
-  color: #000000;
+  color: tomato;
   box-shadow: 4px 4px 4px #eaeaea;
-  background-color: #f6f6f6;
-  border: 1px solid #f6f6f6;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid tomato;
   border-radius: 20px;
-  width: 82vw;
+  width: 88vw;
   height: 11vh;
   cursor: pointer;
   display: inline-block;
 }
-.functionnal__choose__btn--primary {
+.functioning__choose__btn--primary {
   background-color: #f5edff;
   border: 1px solid #f5edff;
 }
-.functionnal__choose__badge {
+.functioning__choose__badge {
   position: absolute;
   padding-top: 0.4rem;
-  left: -0.8rem;
+  left: -1rem;
   border-radius: 2.3rem;
   color: #ffffff;
   width: 2.3rem;
@@ -265,11 +279,18 @@ input[type=text]:focus {
   font-weight: normal;
 }
 
-.fa-mobile-alt,
-.fa-list-ul {
-  font-size: 1.85rem;
+.fa-mobile-alt {
+  font-size: 2rem;
   position: absolute;
-  left: 2.3rem;
+  left: 2.55rem;
+  color: #8a8989;
+  padding-left: 1.2rem;
+}
+
+.fa-list-ul {
+  font-size: 1.7rem;
+  position: absolute;
+  left: 2.5rem;
   color: #8a8989;
   padding-left: 1rem;
 }
@@ -287,15 +308,14 @@ input[type=text]:focus {
   padding-bottom: 2.5rem;
   display: flex;
   flex-direction: column;
-  background-color: #f6f6f6;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .card {
-  margin-top: 0.1rem;
   border: 1px solid #f6f6f6;
   border-radius: 1rem;
-  background-color: #ffffff;
-  margin-bottom: 2rem;
+  background-color: rgba(255, 255, 255, 0);
+  margin-bottom: 3rem;
 }
 .card__header {
   height: 17rem;
@@ -370,4 +390,11 @@ input[type=text]:focus {
 }
 .card .fa-heart:hover::after {
   opacity: 1;
+}
+
+.footer {
+  background-color: rgba(255, 255, 255, 0);
+}
+.footer_logo {
+  margin-top: 15rem;
 }
