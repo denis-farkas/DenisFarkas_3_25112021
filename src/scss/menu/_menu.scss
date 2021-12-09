@@ -1,0 +1,9 @@
+@use "base/variables";
+@use "base/mixins";
+
+.menu {
+  background-color: variables.$grey-light;
+  &__header {
+    padding-top: -5rem;
+  }
+}

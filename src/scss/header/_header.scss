@@ -3,19 +3,23 @@
 
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  box-shadow: 0 2px 0 variables.$grey-dark;
 
   &__logo {
     width: 16rem;
     padding-top: 2.2rem;
     padding-bottom: 1.2rem;
+
+    &--menu {
+      margin-right: 27%;
+    }
   }
 
   &__return {
-    width: 5rem;
+    width: 20%;
     padding: 1rem;
+    text-align: center;
   }
 
   &__button {
@@ -25,8 +29,8 @@
     background-color: variables.$white;
   }
 
-  fa {
-    font-size: 15px;
+  .fa-arrow-left {
+    font-size: 2rem;
     color: variables.$black;
   }
 
