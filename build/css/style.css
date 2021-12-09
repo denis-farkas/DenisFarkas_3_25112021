@@ -24,10 +24,10 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  background-image: url("../img/Accueil.png");
+  /*background-image: url("../img/Accueil.png");
   background-repeat: no-repeat;
   background-size: auto;
-  background-position: 50% 0%;
+  background-position: 50% 0%;*/
   width: 375px;
   margin: 0 auto;
 }
@@ -184,15 +184,14 @@ input[type=text]:focus {
   flex-direction: column;
   align-items: center;
   padding-bottom: 5.5rem;
-  background-color: rgba(255, 255, 255, 0);
-  border: 1px solid green;
+  background-color: #f6f6f6;
 }
 .explore__form__search {
   text-align: center;
   width: 100%;
   padding-top: 1.8rem;
   padding-bottom: 0.4rem;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: #eaeaea;
   font-size: 1.7rem;
   height: 4.8rem;
 }
@@ -201,7 +200,7 @@ input[type=text]:focus {
   margin-top: 4rem;
   margin-right: 1.4rem;
   text-align: center;
-  color: tomato;
+  color: #000000;
 }
 .explore__form__subtitle {
   text-align: center;
@@ -227,8 +226,7 @@ input[type=text]:focus {
 .functioning {
   display: flex;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0);
-  border: 1px solid tomato;
+  background-color: #ffffff;
   padding-bottom: 2rem;
 }
 .functioning__contain {
@@ -236,7 +234,7 @@ input[type=text]:focus {
   align-items: center;
 }
 .functioning__title {
-  padding-top: 5rem;
+  padding-top: 5.2rem;
   padding-left: 2rem;
 }
 .functioning__choose__btn {
@@ -248,10 +246,10 @@ input[type=text]:focus {
   padding: 2.8rem 1.4rem;
   align-content: center;
   text-align: center;
-  color: tomato;
-  box-shadow: 4px 4px 4px #eaeaea;
-  background-color: rgba(255, 255, 255, 0);
-  border: 1px solid tomato;
+  color: #000000;
+  box-shadow: 4px 4px 4px #8a8989;
+  background-color: #f6f6f6;
+  border: 1px solid #f6f6f6;
   border-radius: 20px;
   width: 32.3rem;
   height: 7rem;
@@ -301,10 +299,10 @@ input[type=text]:focus {
 
 .restaurant {
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 3.4rem;
   display: flex;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: #f6f6f6;
 }
 .restaurant__contain {
   padding: 1rem 2rem;
@@ -317,8 +315,9 @@ input[type=text]:focus {
 
 .card {
   border: 1px solid #f6f6f6;
+  box-shadow: 0px 4px 4px #8a8989;
   border-radius: 1rem;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: #ffffff;
   margin-bottom: 2.3rem;
 }
 .card__h_modified {
@@ -403,8 +402,32 @@ input[type=text]:focus {
 }
 
 .footer {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: #353535;
 }
-.footer_logo {
-  margin-top: 15rem;
+.footer__logo {
+  padding-top: 1.7rem;
+  margin-left: 2.3rem;
+  margin-bottom: 0.8rem;
+}
+.footer__nav {
+  margin-left: 2.3rem;
+  padding-bottom: 2rem;
+}
+.footer__item {
+  color: white;
+  font-size: 1.6rem;
+  margin-bottom: 0.7rem;
+}
+
+.fa-utensils {
+  padding-right: 0.5rem;
+}
+
+.fa-hands-helping {
+  font-size: 1.2rem;
+  padding-right: 0.5rem;
+}
+
+.footer a {
+  color: #ffffff;
 }

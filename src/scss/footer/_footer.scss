@@ -2,9 +2,35 @@
 @use "base/mixins";
 
 .footer {
-  background-color: variables.$transp;
+  background-color: variables.$black-grey;
 
-  &_logo {
-    margin-top: 15rem;
+  &__logo {
+    padding-top: 1.7rem;
+    margin-left: 2.3rem;
+    margin-bottom: 0.8rem;
   }
+
+  &__nav {
+    margin-left: 2.3rem;
+    padding-bottom: 2rem;
+  }
+
+  &__item {
+    color: white;
+    font-size: 1.6rem;
+    margin-bottom: 0.7rem;
+  }
+}
+
+.fa-utensils {
+  padding-right: 0.5rem;
+}
+
+.fa-hands-helping {
+  font-size: 1.2rem;
+  padding-right: 0.5rem;
+}
+
+.footer a {
+  color: variables.$white;
 }

@@ -5,8 +5,7 @@
 .functioning {
   display: flex;
   flex-direction: column;
-  background-color: variables.$transp;
-  border: 1px solid tomato;
+  background-color: variables.$white;
   padding-bottom: 2rem;
 
   &__contain {
@@ -14,7 +13,7 @@
     align-items: center;
   }
   &__title {
-    padding-top: 5rem;
+    padding-top: 5.2rem;
     padding-left: 2rem;
   }
 
@@ -28,10 +27,10 @@
       padding: 2.8rem 1.4rem;
       align-content: center;
       text-align: center;
-      color: variables.$tomat;
-      box-shadow: 4px 4px 4px variables.$grey;
-      background-color: variables.$transp;
-      border: 1px solid variables.$tomat;
+      color: variables.$black;
+      box-shadow: 4px 4px 4px variables.$grey-dark;
+      background-color: variables.$grey-light;
+      border: 1px solid variables.$grey-light;
       border-radius: 20px;
       width: 32.3rem;
       height: 7rem;
