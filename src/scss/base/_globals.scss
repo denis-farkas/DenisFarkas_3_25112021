@@ -3,7 +3,8 @@
 
 html {
   box-sizing: border-box;
-
+  font-size: 62.5%;
+  /*
   @include mixins.small_device {
     font-size: 80%;
   }
@@ -15,7 +16,7 @@ html {
   }
   @include mixins.iphoneX {
     font-size: 69%;
-  }
+  }*/
 }
 
 *,
@@ -28,7 +29,10 @@ body {
   font-family: variables.$font_principal;
   background-image: url("../img/Accueil.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
+  background-position: 50% 0%;
+  width: 375px;
+  margin: 0 auto;
 }
 
 p {
@@ -37,14 +41,9 @@ p {
   margin-block-end: 1rem;
 }
 
-.soft {
-  font-size: 1.6rem;
-  margin-block-start: 0.4em;
-}
-
 .container {
   width: 100%;
-  max-width: 120rem;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -68,15 +67,14 @@ h1,
 h2,
 h3 {
   margin: 0 0 variables.$separation 0;
-  padding-left: 0.5rem;
 }
 
 h1 {
-  font-size: 2.45rem;
+  font-size: 2.4rem;
 }
 
 h2 {
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 h3 {

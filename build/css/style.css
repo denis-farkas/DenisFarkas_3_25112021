@@ -1,25 +1,19 @@
 html {
   box-sizing: border-box;
-}
-@media (min-width: 480px) {
-  html {
+  font-size: 62.5%;
+  /*
+  @include mixins.small_device {
     font-size: 80%;
   }
-}
-@media (min-width: 320px) {
-  html {
+  @include mixins.iphone5 {
     font-size: 53.42%;
   }
-}
-@media (min-width: 375px) {
-  html {
+  @include mixins.iphone6_8 {
     font-size: 62.5%;
   }
-}
-@media (min-width: 414px) {
-  html {
+  @include mixins.iphoneX {
     font-size: 69%;
-  }
+  }*/
 }
 
 *,
@@ -32,7 +26,10 @@ body {
   font-family: "Roboto", sans-serif;
   background-image: url("../img/Accueil.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
+  background-position: 50% 0%;
+  width: 375px;
+  margin: 0 auto;
 }
 
 p {
@@ -43,15 +40,9 @@ p {
           margin-block-end: 1rem;
 }
 
-.soft {
-  font-size: 1.6rem;
-  -webkit-margin-before: 0.4em;
-          margin-block-start: 0.4em;
-}
-
 .container {
   width: 100%;
-  max-width: 120rem;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -77,15 +68,14 @@ h1,
 h2,
 h3 {
   margin: 0 0 1.1rem 0;
-  padding-left: 0.5rem;
 }
 
 h1 {
-  font-size: 2.45rem;
+  font-size: 2.4rem;
 }
 
 h2 {
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 h3 {
@@ -110,25 +100,23 @@ h4 {
 
 .title {
   margin-top: 4.8rem;
-  padding: 0 2rem;
+  padding: 0 1.8rem;
 }
 
-.content {
-  padding: 2rem 2rem;
-  align-items: center;
+.soft {
+  font-size: 1.7rem;
 }
 
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 2px 8px #8a8989;
-  margin-bottom: 5px;
+  box-shadow: 0 2px 0 #8a8989;
 }
 .header__logo {
   width: 16rem;
   padding-top: 2.2rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.2rem;
 }
 .header__return {
   width: 5rem;
@@ -159,11 +147,11 @@ h4 {
 
 input[type=text] {
   border: none;
-  background-color: #eaeaea;
+  background-color: rgba(255, 255, 255, 0);
   color: #000000;
   text-align: left;
   outline: none;
-  padding: 0 17.3px;
+  padding: 0 1.2rem;
   width: 15.4rem;
 }
 
@@ -195,26 +183,29 @@ input[type=text]:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 5rem;
+  padding-bottom: 5.5rem;
   background-color: rgba(255, 255, 255, 0);
+  border: 1px solid green;
 }
 .explore__form__search {
   text-align: center;
   width: 100%;
-  padding-top: 1.2rem;
+  padding-top: 1.8rem;
   padding-bottom: 0.4rem;
-  background-color: #eaeaea;
-  font-size: 1.6rem;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 1.7rem;
+  height: 4.8rem;
 }
 .explore__form__title {
-  margin-top: 5.2rem;
-  padding-left: 4rem;
-  padding-right: 6rem;
+  width: 65%;
+  margin-top: 4rem;
+  margin-right: 1.4rem;
   text-align: center;
+  color: tomato;
 }
 .explore__form__subtitle {
-  padding-left: 1.2rem;
   text-align: center;
+  padding: 0 2.5rem;
 }
 .explore__form__button {
   background: #ff79da;
@@ -238,18 +229,23 @@ input[type=text]:focus {
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid tomato;
+  padding-bottom: 2rem;
+}
+.functioning__contain {
+  padding: 2rem 2rem;
+  align-items: center;
 }
 .functioning__title {
-  padding-top: 6rem;
-  padding-left: 1.5rem;
+  padding-top: 5rem;
+  padding-left: 2rem;
 }
 .functioning__choose__btn {
   position: relative;
-  margin-left: 0.78rem;
-  margin-bottom: 2.5rem;
+  margin-left: 1rem;
+  margin-bottom: 2.7rem;
   font-size: 1.6rem;
   font-weight: 700;
-  padding: 4vh 18vw;
+  padding: 2.8rem 1.4rem;
   align-content: center;
   text-align: center;
   color: tomato;
@@ -257,8 +253,8 @@ input[type=text]:focus {
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid tomato;
   border-radius: 20px;
-  width: 88vw;
-  height: 11vh;
+  width: 32.3rem;
+  height: 7rem;
   cursor: pointer;
   display: inline-block;
 }
@@ -304,21 +300,32 @@ input[type=text]:focus {
 }
 
 .restaurant {
-  margin-top: 3rem;
-  padding-bottom: 2.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0);
+}
+.restaurant__contain {
+  padding: 1rem 2rem;
+  align-items: center;
+}
+.restaurant__title {
+  margin-left: 2rem;
+  margin-top: 4.8rem;
 }
 
 .card {
   border: 1px solid #f6f6f6;
   border-radius: 1rem;
   background-color: rgba(255, 255, 255, 0);
-  margin-bottom: 3rem;
+  margin-bottom: 2.3rem;
+}
+.card__h_modified {
+  margin: 0;
 }
 .card__header {
-  height: 17rem;
+  height: 17.5rem;
   display: flex;
 }
 .card__header__image {
@@ -329,11 +336,12 @@ input[type=text]:focus {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-top: 1rem;
+  padding-top: 0.8rem;
 }
 .card__body__main {
   width: 80%;
   padding-left: 1.2rem;
+  padding-top: 0.8rem;
 }
 .card__body__main__title {
   font-weight: 600;
@@ -341,6 +349,7 @@ input[type=text]:focus {
 }
 .card__body__main__subtitle {
   padding-left: 1rem;
+  padding-bottom: 1rem;
 }
 .card__body__side {
   width: 20%;
@@ -364,10 +373,11 @@ input[type=text]:focus {
      object-fit: cover;
 }
 .card .fa-heart {
+  padding-top: 0.3rem;
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #000000;
-  font-size: 2.3rem;
+  font-size: 2.4rem;
   cursor: pointer;
   position: relative;
   opacity: 1;

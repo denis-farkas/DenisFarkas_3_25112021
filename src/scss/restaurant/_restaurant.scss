@@ -3,21 +3,35 @@
 @use "base/mixins";
 
 .restaurant {
-  margin-top: 3rem;
-  padding-bottom: 2.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
   background-color: variables.$transp;
+
+  &__contain {
+    padding: 1rem 2rem;
+    align-items: center;
+  }
+
+  &__title {
+    margin-left: 2rem;
+    margin-top: 4.8rem;
+  }
 }
 
 .card {
   border: 1px solid variables.$grey-light;
   border-radius: 1rem;
   background-color: variables.$transp;
-  margin-bottom: 3rem;
+  margin-bottom: 2.3rem;
+
+  &__h_modified {
+    margin: 0;
+  }
 
   &__header {
-    height: 17rem;
+    height: 17.5rem;
     display: flex;
 
     &__image {
@@ -30,11 +44,12 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-top: 1rem;
+    padding-top: 0.8rem;
 
     &__main {
       width: 80%;
       padding-left: 1.2rem;
+      padding-top: 0.8rem;
 
       &__title {
         font-weight: 600;
@@ -43,6 +58,7 @@
 
       &__subtitle {
         padding-left: 1rem;
+        padding-bottom: 1rem;
       }
     }
 
@@ -68,10 +84,11 @@
   }
 
   .fa-heart {
+    padding-top: 0.3rem;
     -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: variables.$black;
-    font-size: 2.3rem;
+    font-size: 2.4rem;
     cursor: pointer;
     position: relative;
     opacity: 1;

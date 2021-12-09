@@ -5,13 +5,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 2px 8px variables.$grey-dark;
-  margin-bottom: 5px;
+  box-shadow: 0 2px 0 variables.$grey-dark;
 
   &__logo {
     width: 16rem;
     padding-top: 2.2rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.2rem;
   }
 
   &__return {
