@@ -1,9 +1,69 @@
 @use "base/variables";
 @use "base/mixins";
+@use "base/utilities";
 
 .menu {
   background-color: variables.$grey-light;
   &__header {
     padding-top: -5rem;
+  }
+
+  &__image {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__name {
+    display: flex;
+    padding-top: 5rem;
+    justify-content: space-around;
+    margin-top: -5rem;
+    z-index: 3;
+    position: relative;
+    border-radius: 50px 50px 0 0;
+    background-color: variables.$grey-light;
+  }
+  &__title {
+    font-family: variables.$font_secondary;
+  }
+
+  &__form {
+    padding-top: 3rem;
+
+    &__subtitle {
+      padding-left: 2rem;
+      width: 7rem;
+    }
+
+    &__choice {
+      border: 1px solid variables.$white;
+      border-radius: 25px;
+      height: 8rem;
+      width: 80%;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      background-color: variables.$white;
+    }
+  }
+}
+
+.underlined {
+  border-bottom: 3px solid variables.$tertiary;
+}
+
+.checkbox {
+  &__input {
+    position: absolute;
+    display: block;
+    outline: none;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    -webkit-appearance: none;
+  }
+
+  &__label {
+    border: 1px solid variables.$black-grey;
   }
 }

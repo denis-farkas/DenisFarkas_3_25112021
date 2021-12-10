@@ -24,12 +24,12 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  background-image: url("../img/menu.png");
+  /*background-image: url("../img/menu.png");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: 50% 0%;
   width: 375px;
-  margin: 0 auto;
+  margin: 0 auto;*/
 }
 
 p {
@@ -105,6 +105,38 @@ h4 {
 
 .soft {
   font-size: 1.7rem;
+}
+
+.fa-heart {
+  padding-top: 0.3rem;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000000;
+  font-size: 2.4rem;
+  cursor: pointer;
+  position: relative;
+  opacity: 1;
+}
+
+.fa-heart::after {
+  content: "\f004";
+  background: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1.3px;
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0);
+  font-size: 2.4rem;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 0.6s;
+  transition-timing-function: ease-in;
+}
+
+.fa-heart:hover::after {
+  opacity: 1;
 }
 
 .header {
@@ -374,34 +406,63 @@ input[type=text]:focus {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.card .fa-heart {
-  padding-top: 0.3rem;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #000000;
-  font-size: 2.4rem;
-  cursor: pointer;
+
+.menu {
+  background-color: #f6f6f6;
+}
+.menu__header {
+  padding-top: -5rem;
+}
+.menu__image {
+  width: 100%;
+  margin: 0 auto;
+}
+.menu__name {
+  display: flex;
+  padding-top: 5rem;
+  justify-content: space-around;
+  margin-top: -5rem;
+  z-index: 3;
   position: relative;
-  opacity: 1;
+  border-radius: 50px 50px 0 0;
+  background-color: #f6f6f6;
 }
-.card .fa-heart::after {
-  content: "\f004";
-  background: linear-gradient(#9356dc, #ff79da);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1.3px;
-  -webkit-text-stroke-color: rgba(255, 255, 255, 0);
-  font-size: 2.4rem;
+.menu__title {
+  font-family: "Shrikhand", cursive;
+}
+.menu__form {
+  padding-top: 3rem;
+}
+.menu__form__subtitle {
+  padding-left: 2rem;
+  width: 7rem;
+}
+.menu__form__choice {
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+  height: 8rem;
+  width: 80%;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  background-color: #ffffff;
+}
+
+.underlined {
+  border-bottom: 3px solid #99e2d0;
+}
+
+.checkbox__input {
   position: absolute;
-  left: 0;
-  opacity: 0;
-  transition-property: opacity;
-  transition-duration: 0.6s;
-  transition-timing-function: ease-in;
+  display: block;
+  outline: none;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
 }
-.card .fa-heart:hover::after {
-  opacity: 1;
+.checkbox__label {
+  border: 1px solid #353535;
 }
 
 .footer {
