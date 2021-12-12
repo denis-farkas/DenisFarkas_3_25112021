@@ -82,5 +82,13 @@ input[type="text"]:focus {
       cursor: pointer;
       display: inline-block;
     }
+
+    &__button:hover {
+      background: linear-gradient(
+        lighten(variables.$secondary, 5%),
+        lighten(variables.$primary, 5%)
+      );
+      box-shadow: 0 2px 10px lighten(variables.$grey-dark, 6%);
+    }
   }
 }

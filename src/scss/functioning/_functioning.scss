@@ -28,7 +28,7 @@
       align-content: center;
       text-align: center;
       color: variables.$black;
-      box-shadow: 4px 4px 4px variables.$grey-dark;
+      box-shadow: 4px 4px 4px lighten(variables.$grey-dark, 8%);
       background-color: variables.$grey-light;
       border: 1px solid variables.$grey-light;
       border-radius: 20px;

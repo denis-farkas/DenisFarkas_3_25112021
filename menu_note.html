@@ -7,147 +7,169 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="build/css/normalize.css">
     <link rel="stylesheet" href="build/css/fontaws.css">
     <link rel="stylesheet" href="build/css/style.css">
 </head>
-
 <body>
-    <div class="spinner-background"><div class="simple-spinner"></div></div>
-    <header class="header">   
-           <div class="header__logo">
+    
+    <header class="header">
+        <div class="header__return">
+            <a href="index.html" ><button class="header__button"><i class="fa fa-arrow-left"></i></button></a> 
+        </div>
+           <div class="header__logo header__logo--menu">
                 <img src="build/img/logo/ohmyfood.png" alt="logo oh my food">
            </div>      
     </header>
     <main class="main container">
-        <div class="explore">
-            <form class="explore__form">
-                <div class="explore__form__search">
-                    <span><i class="fa fa-map-marker-alt"></i></span>
-                    <input type="text" name="search" placeholder="Paris, Belleville" aria-label="localisation">
-                </div>
-                <div class="explore__form__title">
-                    <h1>Réservez le menu qui vous convient</h1>
-                </div>
-                <div class="explore__form__subtitle">
-                    <p class="muted">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-                </div>
-                <div class="explore__form__submit">
-                    <button class="explore__form__button" type="submit">Explorer nos restaurants</button>
-                </div>
-                </form>
-        </div> 
-        <div class="functioning">
-            <div class="functioning__title">
-                <h1>Fonctionnement</h1>
-            </div>
-            <div class="functioning__contain">
-                <div class="functioning__choose">
-                    <div class="functioning__choose__btn">
-                        <badge class="functioning__choose__badge">1</badge>
-                        <i class="fa fa-mobile-alt"></i>
-                        Choisissez un restaurant
-                    </div>
-                </div>
-                <div class="functioning__choose">
-                    <div class="functioning__choose__btn">
-                        <badge class="functioning__choose__badge">2</badge>
-                        <i class="fa fa-list-ul"></i>
-                        Composez votre menu
-                    </div>
-                </div>
-                <div class="functioning__choose">
-                    <div class="functioning__choose__btn functioning__choose__btn--primary">
-                        <badge class="functioning__choose__badge">3</badge>
-                        <i class="fa fa-store"></i>
-                        Dégustez au restaurant
-                    </div>
+        <div class="menu">
+            <div class="menu__header">
+                <img class="menu__image second-cover" src="build/img/restaurants/note.webp" alt="La note enchantée"> 
+                <div class="menu__name">
+                    <h1 class="menu__title">La note enchantée</h1><span><i class="fa fa-heart"></i></span>
                 </div>
             </div>
-        </div>
-        <div class="restaurant">
-            <div class="restaurant__title">
-                <h1>Restaurants</h1>
-            </div>
-            <div class="restaurant__contain">
-                <div class="card"> 
-                    <a href="menu_palette.html"><div class="card__header">   
-                        <img class="card__header__image prime" src="build/img/restaurants/palette.webp" alt="La palette du goût">   
-                    </div></a>
-                    <div class="card__body">
-                        <div class="card__body__main">
-                            <div class="card__title">
-                                <h3 class="card__h_modified">La palette du goût</h3>  
-                            </div>
-                            <div class="card__subtitle">
-                                <p class="soft">Ménilmontant</p> 
-                             </div>
-                        </div>
-                        
-                        <div class="card__body__side">
-                            <i class="like fa fa-heart"></i>
-                        </div>
+            <form class="menu__form">
+                <section class="menu__form__starters">
+                    <div class="menu__form__subtitle">
+                        <h4 class="underlined">ENTRÉES</h4>
                     </div>
-                </div>
-                <div class="card">
-                    <a href="menu_note.html"><div class="card__header cover">  
-                        <img class="card__header__image second" src="build/img/restaurants/note.webp" alt="La note enchantéet">
-                    </div></a>
-                    <div class="card__body">
-                        <div class="card__body__main">
-                            <div class="card__title">
-                                <h3 class="card__h_modified">La note enchantée</h3>  
-                            </div>
-                            <div class="card__subtitle">
-                                <p class="soft">Charonne</p> 
-                             </div>
+                    <div class="checkbox anim_1">
+                        <div class="checkbox__text">
+                            <h3 class="checkbox__text__title">Ravioles de foie gras</h3>
+                            <p class="checkbox__text__description">Accompagnés de leur crème à la truffe</p>
                         </div>
-                        <div class="card__body__side">
-                            <i class="fa fa-heart"></i>
+                        <div class="checkbox__price">
+                            <span class="checkbox__price__opt">25€</span>
                         </div>
-                        
+                        <div class="checkbox__check">
+                            <i class="fa fa-check-circle"></i>
+                        </div>   
                     </div>
-                </div>
-                <div class="card">
-                    <a href="menu_france.html"><div class="card__header cover">
-                        <img class="card__header__image third" src="build/img/restaurants/france.webp" alt="À la française">
-                    </div></a>
-                    <div class="card__body">
-                        <div class="card__body__main">
-                            <div class="card__title">
-                                <h3 class="card__h_modified">À la française</h3>  
-                            </div>
-                            <div class="card__subtitle">
-                                <p class="soft">Cité Rouge</p> 
-                             </div>
+                    <div class="checkbox anim_2">
+                        <div class="checkbox__text">
+                            <h3 class="checkbox__text__title">Caviar osciètre</h3>
+                            <p class="checkbox__text__description">Sur blini à la farine de blé noir</p>
                         </div>
-                        <div class="card__body__side">
-                            <i class="like fa fa-heart"></i>
+                        <div class="checkbox__price">
+                            <span class="checkbox__price__opt">35€</span>
                         </div>
-                        
+                        <div class="checkbox__check">
+                            <i class="fa fa-check-circle"></i>
+                        </div>   
                     </div>
-                </div>
-                <div class="card">
-                    <a href="menu_delice.html"><div class="card__header cover">
-                        <img class="card__header__image fourth" src="build/img/restaurants/delice.webp" alt="La palette du goût">
-                    </div></a>
-                    <div class="card__body">
-                        <div class="card__body__main">
-                            <div class="card__title">
-                                <h3 class="card__h_modified">Le délice des sens</h3>  
-                            </div>
-                            <div class="card__subtitle">
-                                <p class="soft">Folie-Méricourt</p> 
-                             </div>
+                    <div class="checkbox anim_3">
+                        <div class="checkbox__text">
+                            <h3 class="checkbox__text__title">Homard et espuma de potiron</h3>
+                            <p class="checkbox__text__description">Mariné aux zestes d'orange</p>
                         </div>
-                        <div class="card__body__side">
-                            <i class="like fa fa-heart"></i>
+                        <div class="checkbox__price">
+                            <span class="checkbox__price__opt">20€</span>
                         </div>
-                        
+                        <div class="checkbox__check">
+                            <i class="fa fa-check-circle"></i>
+                        </div>   
                     </div>
+                    <div class="checkbox anim_4">
+                        <div class="checkbox__text">
+                            <h3 class="checkbox__text__title">Foie gras de canard cuit entier</h3>
+                            <p class="checkbox__text__description">Confiture de figue et pain toasté</p>
+                        </div>
+                        <div class="checkbox__price">
+                            <span class="checkbox__price__opt">35€</span>
+                        </div>
+                        <div class="checkbox__check">
+                            <i class="fa fa-check-circle"></i>
+                        </div>   
+                    </div>
+                </section>
+                <section class="menu__form__dishes">
+                    <div class="menu__form__subtitle">
+                        <h4 class="underlined">PLATS</h4>
+                    </div>
+                    <div class="checkbox anim_5">
+                        <div class="checkbox__text">
+                            <h3 class="checkbox__text__title">Noix de coquilles Saint-Jacques</h3>
+                            <p class="checkbox__text__description">Sur lit de purée de céleri-rave</p>
+                        </div>
+                        <div class="checkbox__price">
+                            <span class="checkbox__price__opt">40€</span>
+                        </div>
+                        <div class="checkbox__check">
+                            <i class="fa fa-check-circle"></i>
+                        </div>   
+                    </div>
+                    <div class="checkbox anim_6">
+                        <div class="checkbox__text">
+                            <h3 class="checkbox__text__title">Langoustine poêlée</h3>
+                            <p class="checkbox__text__description">Purée de patate douce</p>
+                        </div>
+                        <div class="checkbox__price">
+                            <span class="checkbox__price__opt">35€</span>
+                        </div>
+                        <div class="checkbox__check">
+                            <i class="fa fa-check-circle"></i>
+                        </div>   
+                    </div>
+                    <div class="checkbox anim_7">
+                        <div class="checkbox__text">
+                            <h3 class="checkbox__text__title">Mijoté de queue de boeuf</h3>
+                            <p class="checkbox__text__description">Et riz sauvage aux zestes de citron</p>
+                        </div>
+                        <div class="checkbox__price">
+                            <span class="checkbox__price__opt">44€</span>
+                        </div>
+                        <div class="checkbox__check">
+                            <i class="fa fa-check-circle"></i>
+                        </div>   
+                    </div>
+                </section>
+                <section class="menu__form__desserts">
+                    <div class="menu__form__subtitle">
+                        <h4 class="underlined">DESSERTS</h4>
+                    </div>
+                    <div class="checkbox anim_8">
+                        <div class="checkbox__text">
+                            <h3 class="checkbox__text__title">Macaron noisette et chocolat</h3>
+                            <p class="checkbox__text__description">Glace au caramel brun et sel de Guérande</p>
+                        </div>
+                        <div class="checkbox__price">
+                            <span class="checkbox__price__opt">18€</span>
+                        </div>
+                        <div class="checkbox__check">
+                            <i class="fa fa-check-circle"></i>
+                        </div>   
+                    </div>
+                    <div class="checkbox anim_9">
+                        <div class="checkbox__text">
+                            <h3 class="checkbox__text__title">Baba au rhum revisité</h3>
+                            <p class="checkbox__text__description">Avec son coulis de citron</p>
+                        </div>
+                        <div class="checkbox__price">
+                            <span class="checkbox__price__opt">22€</span>
+                        </div>
+                        <div class="checkbox__check">
+                            <i class="fa fa-check-circle"></i>
+                        </div>   
+                    </div>
+                    <div class="checkbox anim_9">
+                        <div class="checkbox__text">
+                            <h3 class="checkbox__text__title">Tarte au citron meringuée</h3>
+                            <p class="checkbox__text__description">Déstructurée</p>
+                        </div>
+                        <div class="checkbox__price">
+                            <span class="checkbox__price__opt">23€</span>
+                        </div>
+                        <div class="checkbox__check">
+                            <i class="fa fa-check-circle"></i>
+                        </div>   
+                    </div>
+                </section>
+                <div class="menu__form__order">
+                    <button class="menu__form__order__button" type="submit">Commander</button>
                 </div>
-            </div>
+            </form>
         </div>
     </main>
     <footer class="footer">
@@ -179,7 +201,7 @@
                        Contact</a>                
                 </li>
             </ul>
-    </footer> 
-
+    </footer>
+    
 </body>
 </html>

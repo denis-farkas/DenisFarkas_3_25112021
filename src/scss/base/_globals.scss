@@ -27,7 +27,7 @@ html {
 
 body {
   font-family: variables.$font_principal;
-  /*background-image: url("../img/menu.png");
+  /* background-image: url("../img/menu.png");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: 50% 0%;
@@ -87,4 +87,8 @@ h4 {
 
 .muted {
   color: #4f4f4f;
+}
+
+.card:hover {
+  transform: scale(1.03);
 }
