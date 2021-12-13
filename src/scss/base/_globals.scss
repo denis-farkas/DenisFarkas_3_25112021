@@ -4,10 +4,11 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  /*
-  @include mixins.small_device {
-    font-size: 80%;
+
+  @include mixins.tablet {
+    font-size: 100%;
   }
+  /*
   @include mixins.iphone5 {
     font-size: 53.42%;
   }

@@ -5,8 +5,8 @@
 .menu {
   background-color: variables.$grey-light;
   &__header {
-    height: 250px;
-    max-height: 250px;
+    height: 40rem;
+    max-height: 50rem;
     margin-bottom: 2rem;
   }
 
@@ -31,16 +31,38 @@
   &__form {
     padding-top: 1.5rem;
 
+    @include mixins.desktop {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
     &__subtitle {
       padding-left: 2rem;
       width: 6rem;
     }
 
+    &__starters {
+      @include mixins.desktop {
+        width: 35rem;
+        margin-top: 1rem;
+      }
+    }
+
     &__dishes {
       margin-top: 3.2rem;
+      @include mixins.desktop {
+        width: 40rem;
+        margin-top: 1rem;
+      }
     }
     &__desserts {
       margin-top: 4.7rem;
+      @include mixins.desktop {
+        width: 40rem;
+        margin-top: 1rem;
+      }
     }
     &__order {
       display: flex;
@@ -74,6 +96,12 @@
         width: 18.5rem;
         cursor: pointer;
         display: inline-block;
+
+        @include mixins.desktop {
+          width: 30rem;
+          margin-top: 5rem;
+          height: 5rem;
+        }
       }
 
       &__button:hover {

@@ -12,6 +12,13 @@
   &__contain {
     padding: 1rem 2rem;
     align-items: center;
+
+    @include mixins.desktop {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
   }
 
   &__title {
@@ -25,6 +32,10 @@
   border-radius: 1rem;
   background-color: variables.$white;
   margin-bottom: 2.3rem;
+
+  @include mixins.desktop {
+    width: 30rem;
+  }
 
   &__h_modified {
     margin: 0;
