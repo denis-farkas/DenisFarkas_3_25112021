@@ -29,6 +29,7 @@
   position: relative;
   opacity: 1;
 }
+
 .fa-heart::after {
   content: "\f004";
   background: linear-gradient(#9356dc, #ff79da);
@@ -46,5 +47,10 @@
   transition-timing-function: ease-in;
 }
 .fa-heart:hover::after {
+  opacity: 1;
+}
+
+/*trick to maintain colored heart*/
+span:focus .fa-heart::after {
   opacity: 1;
 }

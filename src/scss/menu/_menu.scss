@@ -5,7 +5,6 @@
 .menu {
   background-color: variables.$grey-light;
   &__header {
-    height: 40rem;
     max-height: 50rem;
     margin-bottom: 2rem;
   }
@@ -46,7 +45,7 @@
 
     &__starters {
       @include mixins.desktop {
-        width: 35rem;
+        width: 40rem;
         margin-top: 1rem;
       }
     }
@@ -99,7 +98,7 @@
         display: inline-block;
 
         @include mixins.desktop {
-          width: 30rem;
+          width: 40rem;
           margin-top: 5rem;
           height: 5rem;
         }
