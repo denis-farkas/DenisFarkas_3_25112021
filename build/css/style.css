@@ -229,7 +229,7 @@ input[type=text]:focus {
   background-color: #f6f6f6;
 }
 .explore__form__search {
-  box-shadow: 0 3px 4px #a19e9e inset;
+  box-shadow: 1px 2px 2px #d6d6d6 inset;
   text-align: center;
   width: 100%;
   padding-top: 1.8rem;
@@ -397,10 +397,21 @@ input[type=text]:focus {
 .card__header {
   height: 17.5rem;
   display: flex;
+  position: relative;
 }
 .card__header__image {
   border-radius: 1rem 1rem 0 0;
   width: 100%;
+}
+.card__header__sticker {
+  position: absolute;
+  padding: 0.7rem;
+  font-size: 1.36rem;
+  right: 1.8rem;
+  top: 1.4rem;
+  z-index: 100;
+  background-color: #99e2d0;
+  color: #028665;
 }
 .card__body {
   display: flex;

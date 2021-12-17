@@ -28,7 +28,7 @@ input[type="text"]:focus {
     background-color: variables.$grey-light;
 
     &__search {
-      box-shadow: 0 3px 4px #a19e9e inset;
+      box-shadow: 1px 2px 2px darken(variables.$grey, 8%) inset;
       text-align: center;
       width: 100%;
       padding-top: 1.8rem;
