@@ -92,6 +92,7 @@ h4 {
   color: #4f4f4f;
 }
 
+/*effect on card*/
 .card:hover {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
@@ -114,6 +115,7 @@ h4 {
   font-size: 1.7rem;
 }
 
+/*bloc animation fa-heart*/
 .fa-heart {
   padding-top: 0.3rem;
   -webkit-text-fill-color: white;
@@ -146,10 +148,12 @@ h4 {
   opacity: 1;
 }
 
+/*zone header */
 .header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  /*adaptation for bigger screen than mobile*/
 }
 .header__logo {
   width: 16rem;
@@ -221,12 +225,14 @@ input[type=text]:focus {
   color: #000000;
 }
 
+/*zone explore*/
 .explore__form {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 5.5rem;
   background-color: #f6f6f6;
+  /*effect on button*/
 }
 .explore__form__search {
   box-shadow: 1px 2px 2px #d6d6d6 inset;
@@ -270,6 +276,7 @@ input[type=text]:focus {
   box-shadow: 0 2px 10px #999898;
 }
 
+/*zone functioning*/
 .functioning {
   display: flex;
   flex-direction: column;
@@ -385,6 +392,7 @@ input[type=text]:focus {
   border-radius: 1rem;
   background-color: #ffffff;
   margin-bottom: 2.3rem;
+  /*adaptation position image*/
 }
 @media (min-width: 1024px) {
   .card {
@@ -398,6 +406,7 @@ input[type=text]:focus {
   height: 17.5rem;
   display: flex;
   position: relative;
+  /*sticker new on image*/
 }
 .card__header__image {
   border-radius: 1rem 1rem 0 0;
@@ -480,6 +489,7 @@ input[type=text]:focus {
 }
 .menu__form {
   padding-top: 1.5rem;
+  /*adaptation for larger screen*/
 }
 @media (min-width: 1024px) {
   .menu__form {
@@ -520,6 +530,7 @@ input[type=text]:focus {
 .menu__form__order {
   display: flex;
   justify-content: center;
+  /*effect on button*/
 }
 .menu__form__order__button {
   background: #ff79da;
@@ -600,6 +611,7 @@ input[type=text]:focus {
   border-radius: 0 1em 1em 0;
 }
 
+/*animation on menu with checkbox size and rotation*/
 .fa-check-circle {
   font-size: 2rem;
   -webkit-transform: rotate(180deg);

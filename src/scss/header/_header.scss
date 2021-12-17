@@ -1,6 +1,8 @@
 @use "base/variables";
 @use "base/mixins";
 
+/*zone header */
+
 .header {
   display: flex;
   justify-content: space-around;
@@ -34,8 +36,7 @@
     color: variables.$black;
   }
 
-  @include mixins.small_device {
-  }
+  /*adaptation for bigger screen than mobile*/
 
   @include mixins.tablet {
     flex-direction: row;

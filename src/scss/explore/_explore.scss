@@ -19,6 +19,8 @@ input[type="text"]:focus {
   color: variables.$black;
 }
 
+/*zone explore*/
+
 .explore {
   &__form {
     display: flex;
@@ -82,7 +84,7 @@ input[type="text"]:focus {
       cursor: pointer;
       display: inline-block;
     }
-
+    /*effect on button*/
     &__button:hover {
       background: linear-gradient(
         lighten(variables.$secondary, 5%),
