@@ -1,16 +1,6 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  /*
-  @include mixins.iphone5 {
-    font-size: 53.42%;
-  }
-  @include mixins.iphone6_8 {
-    font-size: 62.5%;
-  }
-  @include mixins.iphoneX {
-    font-size: 69%;
-  }*/
 }
 @media (min-width: 768px) {
   html {
@@ -26,12 +16,6 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  /* background-image: url("../img/menu.png");
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: 50% 0%;
-  width: 375px;
-  margin: 0 auto;*/
 }
 
 p {
