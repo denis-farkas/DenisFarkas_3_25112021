@@ -154,8 +154,8 @@ span:focus .fa-heart::after {
 }
 .header__return {
   width: 20%;
-  padding: 1rem;
-  text-align: center;
+  padding: 2rem;
+  text-align: right;
 }
 .header__button {
   width: 4rem;
