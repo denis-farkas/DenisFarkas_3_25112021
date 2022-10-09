@@ -21,9 +21,9 @@ body {
 p {
   font-size: 1.8rem;
   -webkit-margin-before: 0.3rem;
-          margin-block-start: 0.3rem;
+  margin-block-start: 0.3rem;
   -webkit-margin-after: 1rem;
-          margin-block-end: 1rem;
+  margin-block-end: 1rem;
 }
 
 .container {
@@ -79,7 +79,7 @@ h4 {
 /*effect on card*/
 .card:hover {
   -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 .text-center {
@@ -180,7 +180,7 @@ span:focus .fa-heart::after {
   }
 }
 
-input[type=text] {
+input[type="text"] {
   border: none;
   background-color: rgba(255, 255, 255, 0);
   color: #000000;
@@ -190,7 +190,7 @@ input[type=text] {
   width: 15.4rem;
 }
 
-input[type=text]:focus {
+input[type="text"]:focus {
   border: none;
 }
 
@@ -441,15 +441,15 @@ input[type=text]:focus {
 .card .third,
 .card .fourth {
   -o-object-position: center bottom;
-     object-position: center bottom;
+  object-position: center bottom;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .card .second {
   -o-object-position: 50% 60%;
-     object-position: 50% 60%;
+  object-position: 50% 60%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .menu {
@@ -603,7 +603,7 @@ input[type=text]:focus {
 .fa-check-circle {
   font-size: 2rem;
   -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
@@ -619,7 +619,7 @@ input[type=text]:focus {
 
 .checkbox:hover .fa-check-circle {
   -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .underlined {
@@ -630,47 +630,47 @@ input[type=text]:focus {
 /* Animation for menu */
 .anim_1 {
   -webkit-animation: fadeInAnimation 3s ease 0.25s 1 forwards;
-          animation: fadeInAnimation 3s ease 0.25s 1 forwards;
+  animation: fadeInAnimation 3s ease 0.25s 1 forwards;
 }
 
 .anim_2 {
   -webkit-animation: fadeInAnimation 3s ease 0.5s 1 forwards;
-          animation: fadeInAnimation 3s ease 0.5s 1 forwards;
+  animation: fadeInAnimation 3s ease 0.5s 1 forwards;
 }
 
 .anim_3 {
   -webkit-animation: fadeInAnimation 3s ease 0.75s 1 forwards;
-          animation: fadeInAnimation 3s ease 0.75s 1 forwards;
+  animation: fadeInAnimation 3s ease 0.75s 1 forwards;
 }
 
 .anim_4 {
   -webkit-animation: fadeInAnimation 3s ease 1s 1 forwards;
-          animation: fadeInAnimation 3s ease 1s 1 forwards;
+  animation: fadeInAnimation 3s ease 1s 1 forwards;
 }
 
 .anim_5 {
   -webkit-animation: fadeInAnimation 3s ease 1.25s 1 forwards;
-          animation: fadeInAnimation 3s ease 1.25s 1 forwards;
+  animation: fadeInAnimation 3s ease 1.25s 1 forwards;
 }
 
 .anim_6 {
   -webkit-animation: fadeInAnimation 3s ease 1.5s 1 forwards;
-          animation: fadeInAnimation 3s ease 1.5s 1 forwards;
+  animation: fadeInAnimation 3s ease 1.5s 1 forwards;
 }
 
 .anim_7 {
   -webkit-animation: fadeInAnimation 3s ease 1.75s 1 forwards;
-          animation: fadeInAnimation 3s ease 1.75s 1 forwards;
+  animation: fadeInAnimation 3s ease 1.75s 1 forwards;
 }
 
 .anim_8 {
   -webkit-animation: fadeInAnimation 3s ease 2s 1 forwards;
-          animation: fadeInAnimation 3s ease 2s 1 forwards;
+  animation: fadeInAnimation 3s ease 2s 1 forwards;
 }
 
 .anim_9 {
   -webkit-animation: fadeInAnimation 3s ease 2.25s 1 forwards;
-          animation: fadeInAnimation 3s ease 2.25s 1 forwards;
+  animation: fadeInAnimation 3s ease 2.25s 1 forwards;
 }
 
 @-webkit-keyframes fadeInAnimation {
@@ -692,19 +692,19 @@ input[type=text]:focus {
 }
 .cover {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .none {
   -o-object-fit: none;
-     object-fit: none;
+  object-fit: none;
 }
 
 .second-cover {
   -o-object-position: 50% 50%;
-     object-position: 50% 50%;
+  object-position: 50% 50%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 30rem;
   width: 100%;
 }
@@ -719,7 +719,7 @@ input[type=text]:focus {
 }
 @media (min-width: 1024px) {
   .footer {
-    padding-left: 20rem;
+    padding-left: 10rem;
   }
 }
 .footer__logo {
@@ -762,7 +762,7 @@ input[type=text]:focus {
   background-color: #9356dc;
   visibility: hidden;
   -webkit-animation: backgroundFill 2s 1;
-          animation: backgroundFill 2s 1;
+  animation: backgroundFill 2s 1;
 }
 
 @-webkit-keyframes backgroundFill {
@@ -793,27 +793,27 @@ input[type=text]:focus {
   top: 50%;
   left: 45%;
   -webkit-animation: rotate 1s 0s infinite ease-in-out alternate;
-          animation: rotate 1s 0s infinite ease-in-out alternate;
+  animation: rotate 1s 0s infinite ease-in-out alternate;
 }
 
 @-webkit-keyframes rotate {
   0% {
     -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes rotate {
   0% {
     -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
