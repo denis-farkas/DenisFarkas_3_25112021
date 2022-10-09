@@ -34,4 +34,8 @@
   @media (min-width: variables.$desktop) {
     @content;
   }
+
+  @mixin line-clamp {
+      @content;
+  }
 }

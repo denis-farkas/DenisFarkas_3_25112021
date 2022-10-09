@@ -1,6 +1,7 @@
 @use "base/variables";
 @use "base/mixins";
 
+
 input[type="text"] {
   border: none;
   background-color: variables.$transp;
